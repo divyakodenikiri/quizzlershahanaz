@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 void main() => runApp(Quizzler());
@@ -32,14 +31,7 @@ class _QuizPageState extends State<QuizPage> {
     'Approximately one quarter of human bones are in the feet.?',
     'A slug\'s blood is green.?',
   ];
-  List<bool> answer = [false, true, true];
-
-
-List<bool> answers = [ false,true,true];
-
-
-  List<bool> answers = [false,true,true];
-
+  List<bool> answers = [false, true, true];
   int questionNumber = 0;
 
   @override
@@ -79,23 +71,12 @@ List<bool> answers = [ false,true,true];
               ),
               onPressed: () {
                 //The user picked true.
-               
-
                 bool correctAnswer = answers[questionNumber];
 
-                if(correctAnswer == true){
-                  print('user got it right');
-                }else{
-                  print('user got it wrong');
-                }
-
-
-
-
-                if(correctAnswer == true){
+                if (correctAnswer == true) {
                   print('user got it right!');
-                }else{
-                  print('user got if wrong');
+                } else {
+                  print('user got it wrong');
                 }
 
 
@@ -122,25 +103,13 @@ List<bool> answers = [ false,true,true];
               ),
               onPressed: () {
                 //The user picked false.
+                bool correctAnswer = answers[questionNumber];
 
-                //hello shanu
-
-                 bool correctAnswer = answers[questionNumber];
-                if(correctAnswer == false){
-                  print('user got it right');
-                }else{
-                  print('user got it wrong');
+                if (correctAnswer == false) {
+                print('user got it right');
+                } else {
+                print('user got it wrong');
                 }
-
-
-                 bool correctAnswer = answers[questionNumber];
-
-                if (correctAnswer == false){
-                   print('user is it right');
-                }else{
-                print('user got  worng');
-              }
-
 
 
                 setState(() {
