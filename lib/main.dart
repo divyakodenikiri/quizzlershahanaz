@@ -79,7 +79,7 @@ List<bool> answers = [ false,true,true];
               ),
               onPressed: () {
                 //The user picked true.
-                //This is a repetation
+               
 
                 bool correctAnswer = answers[questionNumber];
 
@@ -96,7 +96,7 @@ List<bool> answers = [ false,true,true];
                   print('user got it right!');
                 }else{
                   print('user got if wrong');
-             
+                }
 
 
                 setState(() {
